@@ -80,12 +80,9 @@ a:after {
 
 #headerwrap {
 	background: url(../img/header-bg.jpg) no-repeat center top;
-	margin-top: -10px;
-	padding-top:20px;
-	text-align:center;
-	background-attachment: relative;
+  margin-top: -100px;
 	background-position: center center;
-	min-height: 700px;
+	min-height: 1300px;
 	width: 100%;
 
     -webkit-background-size: 100%;
@@ -96,7 +93,16 @@ a:after {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: contain;
+}
+
+@media screen and (max-device-width: 480px) {
+
+  #headerwrap {
+    margin-top: 0px;
+    min-height: 250px;
+  }
+
 }
 
 #headerwrap h1 {
